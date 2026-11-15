@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Toque no que parecer com você e receba uma semana de direção e acolhimento. Sem escrever, sem rótulos.">
         <title>Sem Barreiras</title>
     </head>
     <body>
-        <h1>Sem Barreiras - Meu primeiro passo</h1>
+        <header class="topo">
+            <p class="marca">sem barreiras</p>
+        </header>
+
+        <main class="tela" id="tela-frases">
+            <h1>Olá. O que tem acontecido com você?</h1>
+            <p class="subtitulo">Toque no que parecer com você. Pode escolher até 3.</p>
+
+            <div class="frases" role="group" aria-label="Frases para você escolher">
+                <button type="button" class="frase" data-emocao="ansiedade" aria-pressed="false">Minha cabeça não para de imaginar o que pode dar errado</button>
+                <button type="button" class="frase" data-emocao="comparacao" aria-pressed="false">Vejo a vida dos outros e me sinto para trás</button>
+                <button type="button" class="frase" data-emocao="inseguranca" aria-pressed="false">Tenho medo de não dar conta</button>
+                <button type="button" class="frase" data-emocao="excesso-de-tela" aria-pressed="false">Pego o celular sem perceber</button>
+                <button type="button" class="frase" data-emocao="ansiedade" aria-pressed="false">Sinto uma pressa por dentro, mesmo sem motivo</button>
+                <button type="button" class="frase" data-emocao="inseguranca" aria-pressed="false">Sinto que todo mundo sabe o que está fazendo, menos eu</button>
+                <button type="button" class="frase" data-emocao="excesso-de-tela" aria-pressed="false">Rolo a tela e depois me sinto pior</button>
+                <button type="button" class="frase" data-emocao="comparacao" aria-pressed="false">Minha vida parece pouco perto da dos outros</button>
+            </div>
+
+            <button type="button" class="botao-principal" id="botao-continuar" disabled>Continuar</button>
+
+            <button type="button" class="porta-cuidado" id="botao-cuidado">Perdi alguém ou uma tristeza que não passa</button>
+
+            <button type="button" class="saida" id="botao-prefiro-nao-dizer">Prefiro não dizer agora</button>
+        </main>
+
+        <footer class="rodape">
+            <p class="privacidade">O que você marca aqui fica só no seu aparelho.</p>
+            <p class="apoio">Quer conversar com alguém? <a href="tel:188">CVV 188</a></p>
+        </footer>
     </body>
 </html>
